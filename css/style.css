@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden; 
+}
+
+.contenedor_principal {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    background-image: linear-gradient(rgba(187, 143, 206, 0.3), rgba(125, 206, 160, 0.1)),
+                      url(../imagenes/minecraft_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: height 2s ease;
+}
+
+.imagen_header img{
+    height: 180px;
+    transition: height 2s ease;
+}
+
+.contenido {
+    background-color: rgb(247, 249, 249);
+    padding-top: 100vh;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px repeat(2, 1fr);
+    grid-template-areas: "ip            ip"
+                         "modpack       mods"
+                         "instalacion   skin";
+}
+
+.ip {
+    grid-area: ip;
+    justify-items: center;
+    align-content: center;
+}
+
+.modpack {
+    grid-area: modpack;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modpack .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modpack .imagen img, .instalacion .imagen img {
+    width: 150px;
+}
+
+.mods{
+    grid-area: mods;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mods .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mods .imagen img, .skin .imagen img {
+    width: 140px;
+}
+
+.instalacion {
+    grid-area: instalacion;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instalacion .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skin {
+    grid-area: skin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skin .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ip, .modpack, .mods, .instalacion, .skin {
+    transition: background-color 0.8s ease;
+    border-radius: 3px;
+}
+
+.ip:hover, .modpack:hover, .mods:hover, .instalacion:hover, .skin:hover {
+    background-color: rgb(229, 232, 232);
+}
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(29, 49, 37);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(251, 252, 252);
+    font-size: 12px;
+    font-style: italic;
+}
+
+h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+span {
+    font-size: 15px;
+    padding-block: 30px;
+}
+
+.ip .elementos span {
+    padding-block: 15px;
+}
+
+.elementos_botones {
+    padding-block: 10px;
+}
+
+a {
+    margin-inline: 20px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    border: 1px solid rgb(35, 155, 86);
+    border-radius: 3px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+a:hover {
+    background-color: rgb(35, 155, 86);
+    color: rgb(251, 252, 252);
+}
