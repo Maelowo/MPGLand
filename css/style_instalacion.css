@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    overflow-x: hidden; 
+}
+
+.contenedor_principal {
+    width: 100vw;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header {
+    background-image: linear-gradient(rgba(187, 143, 206, 0.3), rgba(125, 206, 160, 0.1)),
+                      url(../imagenes/minecraft_background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.imagen_header img{
+    height: 80px;
+}
+
+.contenido {
+    background-color: rgb(247, 249, 249);
+    padding-top: 150px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-block: 25px;
+}
+
+.paso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+    padding-block: 25px;
+}
+
+.paso:hover {
+    background-color: rgb(229, 232, 232);
+}
+
+.texto {
+    text-align: left;
+    width: 80%;
+}
+
+span {
+    font-size: 18px;
+    font-style: italic;
+}
+
+p {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: rgb(66, 73, 73);
+}
+
+img {
+    border-radius: 5px;
+}
+
+.imagen1 {
+    width: 900px;
+    margin-bottom: 15px;
+}
+
+.imagen2 {
+    margin-bottom: 15px;
+    margin-inline: 50px;
+}
+
+.imagen3 {
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(20, 143, 119);
+    font-weight: bold;
+}
+
+.footer {
+    background-color: rgb(29, 49, 37);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(251, 252, 252);
+    font-size: 12px;
+    font-style: italic;
+}
